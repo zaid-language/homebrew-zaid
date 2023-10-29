@@ -13,7 +13,7 @@ class Zaid < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/zaid-language/zaid-lang/releases/download/v1.0.6/zaid-lang_1.0.6_darwin_arm64.tar.gz"
-      sha256 "98f502421a2c6137542bb261a80a7efce039ad69628b7fa48d9ba402ed0f7440"
+      sha256 "314e7d8ab548ed2193533db704336cd67bb30c541adc4454bd484759674f0ccc"
 
       def install
         bin.install "zaid"
@@ -21,7 +21,7 @@ class Zaid < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/zaid-language/zaid-lang/releases/download/v1.0.6/zaid-lang_1.0.6_darwin_amd64.tar.gz"
-      sha256 "689f6f99d6972fcb79f6ccba528d9f3c228990fa24b3c701891be7b10f381941"
+      sha256 "9258e31d6b0735b5e7ae4bae7c5c26aa15ed3cf51a4dcd977016bce86bca6813"
 
       def install
         bin.install "zaid"
@@ -32,7 +32,7 @@ class Zaid < Formula
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/zaid-language/zaid-lang/releases/download/v1.0.6/zaid-lang_1.0.6_linux_armv6.tar.gz"
-      sha256 "5565e97d7c683a312f5ef1e29b00d14aa3f62c753fdb05c02c382d53106ef333"
+      sha256 "a8731a9744542a45432e7b4e94d1545fc049c9e2a34d2a088ccb13eec4509782"
 
       def install
         bin.install "zaid"
@@ -40,7 +40,7 @@ class Zaid < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/zaid-language/zaid-lang/releases/download/v1.0.6/zaid-lang_1.0.6_linux_arm64.tar.gz"
-      sha256 "05e949053b3eb6375bab44f304654f60e8fb3b491b363dddfdca7616d0533522"
+      sha256 "d10e9e48901ed83e9bf06abe2728dc239b8b3866570860e0f82fdeb358e1ce3a"
 
       def install
         bin.install "zaid"
@@ -48,7 +48,7 @@ class Zaid < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/zaid-language/zaid-lang/releases/download/v1.0.6/zaid-lang_1.0.6_linux_amd64.tar.gz"
-      sha256 "428b4faa581bdcf5682779b36f366d8e4b14c5b44f993e9722b394ef5249607f"
+      sha256 "60a1f2de50a82f2b650afe1c02fe4c598dd66c50bdd90bea5d0a06f963dfabdc"
 
       def install
         bin.install "zaid"
