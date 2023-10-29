@@ -5,23 +5,23 @@
 class Zaid < Formula
   desc "https://github.com/zaid-language/zaid-lang"
   homepage ""
-  version "1.0.2"
+  version "1.0.4"
 
   depends_on "git"
   depends_on "zsh"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/zaid-language/zaid-lang/releases/download/v1.0.2/zaid-lang_1.0.2_darwin_arm64.tar.gz"
-      sha256 "bcb959a1a1dc781c7499367eb3555f3156268ad1a5ec846d9cec15f550a74e24"
+      url "https://github.com/zaid-language/zaid-lang/releases/download/v1.0.4/zaid-lang_1.0.4_darwin_arm64.tar.gz"
+      sha256 "49152c929eb60d0dd6bb6a5940770669e4c635d674ce934adbc64807ab670e6b"
 
       def install
         bin.install "zaid"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/zaid-language/zaid-lang/releases/download/v1.0.2/zaid-lang_1.0.2_darwin_amd64.tar.gz"
-      sha256 "7b9e8f37649f8a8b0e60863be90e0547fa517bec55f20070804f0b65e7cbfb7d"
+      url "https://github.com/zaid-language/zaid-lang/releases/download/v1.0.4/zaid-lang_1.0.4_darwin_amd64.tar.gz"
+      sha256 "f096ffb5f931c127f85b4923f090661b7549567d7459256ad2ee4c370a8ffaac"
 
       def install
         bin.install "zaid"
@@ -31,24 +31,24 @@ class Zaid < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/zaid-language/zaid-lang/releases/download/v1.0.2/zaid-lang_1.0.2_linux_armv6.tar.gz"
-      sha256 "78eded4e6fc1b86c75e3d0cf6649403c2c793df1104db3a04ae459b777ce7e5d"
+      url "https://github.com/zaid-language/zaid-lang/releases/download/v1.0.4/zaid-lang_1.0.4_linux_armv6.tar.gz"
+      sha256 "f38a79d3e3a9e356601956941e77d4615368679a6e0761bad55a079fc140c816"
 
       def install
         bin.install "zaid"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zaid-language/zaid-lang/releases/download/v1.0.2/zaid-lang_1.0.2_linux_arm64.tar.gz"
-      sha256 "41d233956703c0a11d4536c2d33b69f2784f0a556aeac6b7050807732cde5cc0"
+      url "https://github.com/zaid-language/zaid-lang/releases/download/v1.0.4/zaid-lang_1.0.4_linux_arm64.tar.gz"
+      sha256 "909cf91582ec26618cb5eaba37400a7dfe21d5f951a3dfede88e028353e546ee"
 
       def install
         bin.install "zaid"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/zaid-language/zaid-lang/releases/download/v1.0.2/zaid-lang_1.0.2_linux_amd64.tar.gz"
-      sha256 "65ae7220c2b278781dd7978906d3b960d50900ae9c9037f87b6c0c7ee9482fbd"
+      url "https://github.com/zaid-language/zaid-lang/releases/download/v1.0.4/zaid-lang_1.0.4_linux_amd64.tar.gz"
+      sha256 "e55be8ab0b7d42c0344907b5c4c4eac41e2a414a02cf709617171d9c8fbdcdb6"
 
       def install
         bin.install "zaid"
